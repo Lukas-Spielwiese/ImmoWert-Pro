@@ -1,0 +1,54 @@
+{
+  "verfahren": ["vergleichswert", "ertragswert", "sachwert"],
+  "verfahrensBegruendungen": {
+    "vergleichswert": "Geeignete Vergleichsfälle vorhanden",
+    "ertragswert": "Vermietete Immobilie mit Erträgen",
+    "sachwert": "Ergänzende Betrachtung zur Absicherung"
+  },
+  "objektbezeichnung": "Beispielobjekt – Einfamilienhaus", 
+  "objektBeschreibung": "Einfamilienhaus in Hamburg-Bergedorf, Baujahr 1995. Ruhige Wohnlage.",
+  "planungsrecht": "WR, zweigeschossig, GRZ 0,3, GFZ 0,6",
+  "anrechenbareFlaeche": 150.0,
+  "grundstuecksflaeche": 500.0,
+  "gebaeudeArt": "einfamilienhaus",
+  "standard": "3",
+  "baujahr": 1995,
+  "modernisierung": ["roof", "windows", "heating"],
+  "mietwerte": [
+    {"mietkategorie": "ist", "flaeche": 150.0, "jahresnettokaltmiete": 18000.0}
+  ],
+  "bewirtschaftungskosten": {
+    "verwaltung": 2.0,
+    "instandhaltung": 6.0,
+    "nichtUmlagefaehigeBK": 1.0,
+    "mietausfallwagnis": 2.0
+  },
+  "vergleichsobjekte": [
+    {"transaktionsdatum": "2024-05-01", "flaeche": 140.0, "preis": 420000.0, "zustand": "gepflegt", "lage": "Hamburg-Bergedorf"},
+    {"transaktionsdatum": "2024-03-15", "flaeche": 160.0, "preis": 450000.0, "zustand": "modernisiert", "lage": "Hamburg-Bergedorf"}
+  ],
+  "datenquellen": {
+    "stichtag": "2025-10-19", 
+    "brwZone": "HH-BERG-1234", 
+    "brwWert": 650.0, 
+    "brwQuelle": "Gutachterausschuss Hamburg", 
+    "brwStichtag": "2025-01-01", 
+    "liegenschaftsZinssatz": 3.5, 
+    "lzQuelle": "GAA Hamburg", 
+    "lzStichtag": "2025-01-01", 
+    "sachwertFaktor": 1.05, 
+    "swfQuelle": "GAA Hamburg", 
+    "swfStichtag": "2025-01-01", 
+    "baupreisindex": 140.0, 
+    "baupreisindexStichtag": "2025-07-01"
+  },
+  "rechteBelastungen": {
+    "nießbrauch": false,
+    "wohnrecht": false,
+    "leitungsrecht": true,
+    "wegerecht": false,
+    "grunddienstbarkeit": false
+  },
+  "bodenwertAdjustments": -5000.0,
+  "bemerkungen": "Keine besonderen Mängel festgestellt."
+}
