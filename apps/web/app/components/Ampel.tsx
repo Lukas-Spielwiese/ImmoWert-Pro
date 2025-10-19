@@ -1,0 +1,1 @@
+export function Ampel({status}:{status:'red'|'yellow'|'green'}){ const color=status==='green'?'#2e7d32':status==='yellow'?'#f9a825':'#c62828'; const label=status==='green'?'grün':status==='yellow'?'gelb':'rot'; return <span style={{background:color,color:'#fff',padding:'2px 8px',borderRadius:12,fontWeight:600}}>{label}</span>; }
