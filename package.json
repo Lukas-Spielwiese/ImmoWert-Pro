@@ -1,0 +1,10 @@
+{
+  "name": "immowert-pro-monorepo",
+  "private": true,
+  "workspaces": ["packages/*", "apps/*"],
+  "scripts": {
+    "build": "npm run build -w packages/core && npm run build -w apps/web",
+    "test": "npm run test -w packages/core",
+    "test:e2e": "npm run test -w apps/web"
+  }
+}
