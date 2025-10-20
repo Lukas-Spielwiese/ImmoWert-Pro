@@ -1,0 +1,2 @@
+import { CalcResult } from './types';
+export function bodenwert({brw, flaeche, zuschlag=0}:{brw:number;flaeche:number;zuschlag?:number;}):CalcResult{ const basis=brw*flaeche; const wert=basis+zuschlag; return {wert, protokoll:[{label:'Formel',value:'BRW × Fläche ± Anpassungen (§§40–45)'},{label:'BRW [€/m²]', value: brw.toFixed(2)},{label:'Fläche [m²]', value: String(flaeche)},{label:'Anpassungen', value: zuschlag.toFixed(2)},{label:'Bodenwert', value: wert.toFixed(2)}]}; }

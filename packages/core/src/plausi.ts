@@ -1,0 +1,2 @@
+import { CalcResult } from './types';
+export function gewichtung(results: Partial<Record<string, CalcResult>>, w: Partial<Record<string, number>>){ const keys = Object.keys(results); const sumW = keys.reduce((s, k) => s + (w[k] ?? 0), 0) || 1; const norm: Record<string, number> = {}; keys.forEach(k => norm[k] = (w[k] ?? (1 / keys.length))); const sum = Object.entries(results).reduce((s, [k, v]) => s + (v?.wert || 0) * (norm[k] / sumW), 0); return { wert: sum, protokoll: [{ label: 'Gewichtung (§6)', value: JSON.stringify(norm) }] as any }; }
