@@ -1,0 +1,1 @@
+import { rechteBewertung } from '../src/rightsEncumbrances'; test('Erbbauzins-Barwert §§49–52', ()=>{ const res=rechteBewertung({ausgangswert:300000, rechte:{erbbau:{erbbauzins:8000,restlaufzeit:20,zins:3}}}); expect(res.wert).toBeLessThan(300000); });
