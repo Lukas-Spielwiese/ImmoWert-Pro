@@ -1,1 +1,0 @@
-import { indexPfad, alterswertminderung } from '../src/sachwert'; test('Indexpfad §18/§36', ()=>{ expect(indexPfad(100,125)).toBeCloseTo(1.25,2); }); test('AWM §38', ()=>{ expect(alterswertminderung(80,50)).toBeCloseTo((80-50)/80,4); });
